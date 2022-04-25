@@ -1,0 +1,88 @@
+/* Fonts from Google Fonts - more at https://fonts.google.com */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+@import url("https://fonts.googleapis.com/css?family=Merriweather:400,700");
+
+#content {
+  max-width: 960px;
+  margin: 0 auto;
+}
+header {
+  box-shadow: 1px 1px 4px 1px rgb(24, 23, 23);
+  border-radius: 10px;
+  padding: 1.2em;
+  margin-top: 5px;
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-bottom: 10px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  background-color: #11996cb7;
+}
+
+p {
+  color: black;
+}
+
+main, main p {
+  box-shadow: 1px 1px 4px 1px rgb(24, 23, 23);
+  border-radius: 10px;
+  background-color: #d8ccd086;
+  list-style: none;
+  margin-top: 10px;
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-bottom: 10px;
+  color: rgb(44, 38, 38);
+  padding: 1.2em;
+}
+
+main p {margin: auto;
+  box-shadow: 1px 1px 4px 1px rgba(24, 23, 23, 0);}
+main ul, main h2 {margin-left: 40px;}
+
+html {
+  background-color: #b4e2d8;
+  background-size: 100%;
+  font-family: "Open Sans", sans-serif;
+  padding: 5px 25px;
+  font-size: 18px;
+  margin: 0;
+  color: rgb(24, 22, 22);
+}
+
+footer {
+  background-color: #11996cb7;
+  box-shadow: 1px 1px 4px 1px rgb(24, 23, 23);
+  border-radius: 10px;
+  width: auto;
+  align-items: center;
+  margin-top: 10px;
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-family: "Merriweather", serif;
+  font-size: 32px;
+}
+
+footer p {
+  margin-left: 170px;
+  color: Black;
+}
+
+img {
+  max-width: 35%;
+  box-shadow: 1px 1px 4px 1px rgb(24, 23, 23);
+  border-radius: 10px;
+margin-left: 50px;
+}
+p {
+  padding: 0.7em;
+}
+
+span {
+  margin: 0 0 0 170px;
+}
+
