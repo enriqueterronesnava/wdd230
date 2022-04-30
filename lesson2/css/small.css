@@ -23,7 +23,8 @@ main{margin: 0 auto;
 h1{font-size: small;
 margin: 0.15rem;
 font-family: "Merriweather", serif;}
-img {max-width: 100%;}
+img {max-width: 85%;
+margin: 1.5rem;}
 
 .grid {display: grid; 
 grid-template-columns: 1fr;
