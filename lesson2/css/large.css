@@ -1,0 +1,34 @@
+@media only screen and (min-width:64em) {
+
+    h1{font-size: 2.5rem;}
+    
+    h2,footer {font-size: 1.5rem;}
+    
+    .grid {display: grid; 
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-gap: 10px;
+        align-items: center;
+        margin:0 auto;}
+        
+        .amazon {margin: auto;
+        box-shadow: 1px 1px 4px 1px rgb(24, 23, 23);
+        border-radius: 10px;
+        width:100%;
+        grid-column: 1/2;
+        grid-row: 1/2;}
+        
+        .apple {grid-column: 2 / 3;
+        grid-row: 1/2;
+        margin: auto;
+        box-shadow: 1px 1px 4px 1px rgb(24, 23, 23);
+        border-radius: 10px;
+        width:100%;}
+        
+        .dominos {grid-column: 3/4;
+        grid-row: 1/2;
+        margin: auto;
+        box-shadow: 1px 1px 4px 1px rgb(24, 23, 23);
+        border-radius: 10px;
+        width:100%;}
+    }

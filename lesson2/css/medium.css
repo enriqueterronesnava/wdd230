@@ -1,0 +1,34 @@
+@media only screen and (min-width:32.5em) {
+
+h1, footer {font-size: 2.5rem;}
+
+h2 {font-size: 1.5rem;}
+
+.grid {display: grid; 
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
+    grid-gap: 10px;
+    align-items: auto;
+    margin:0 auto;}
+    
+    .amazon {margin: 0 auto;
+    box-shadow: 1px 1px 4px 1px rgb(24, 23, 23);
+    border-radius: 10px;
+    width:100%;
+    grid-column: 1/2;
+    grid-row: 1/2;}
+    
+    .apple {grid-column: 2 / 3;
+    grid-row: 1/2;
+    margin: 0 auto;
+    box-shadow: 1px 1px 4px 1px rgb(24, 23, 23);
+    border-radius: 10px;
+    width:100%;}
+    
+    .dominos {grid-column: 1/3;
+    grid-row: 2/3;
+    margin:0 auto;
+    box-shadow: 1px 1px 4px 1px rgb(24, 23, 23);
+    border-radius: 10px;
+    width:100%;}
+}
