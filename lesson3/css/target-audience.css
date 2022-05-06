@@ -3,8 +3,9 @@
 nav {background-color: #0F222D;
 display: flex;
 flex-wrap: wrap;
-justify-content: space-between;
-padding: 3rem;}
+justify-content:space-between;
+padding: 1rem;
+border-bottom: solid 1px #b9cad4;}
 
 header {background-color: #0F222D;
 color: #EBE7D9;
@@ -14,41 +15,93 @@ padding: 2rem;}
 main {background-color: #0F222D;
 color: #EBE7D9;
 margin: 1.5rem;
-padding-bottom: 0;}
+padding-bottom: 0;
+justify-content: center;
+}
 
 footer {height: 15%;
     width: 100vw ;
     margin: 0;
     padding: 1rem;
     background-color: #d4c796;
-font-size: 2.1rem;}
+font-size: 1.4rem;}
 
 a  { color: #EBE7D9;
-padding: 1.2rem;
-text-decoration: none;}
+    padding: 1.2rem;
+    text-decoration: none;}
 
 nav img {max-width: 100%;}
 
 nav ul {display: flex;
     flex-wrap: wrap;
-justify-content: end;}
+justify-content: end;
+padding-left: 0;}
 
 li  {list-style: none;}
-li:hover {background-color: #EBE7D9;}
+
 
 a:hover {background-color: #EBE7D9;
 color: black;}
 header h1 {color: #EBE7D9;}
 main img  {border-style:groove;
     border-color:#EBE7D9;
-    box-shadow: 10px;
 max-width: 70vw;}
 
-.porpuse_p {padding: 0 25% 0 25%;}
+main p {padding: 0 30% 0 30%;}
 
+.personas-grid {display: grid;
+grid-template-columns: 1fr 1fr;
+justify-content: space-between;
+-ms-grid-column-align: center;
+grid-gap: 2rem;
+}
+
+.persona1  {border-right: solid 1px #EBE7D9;}
+.persona2  {border-left: solid 1px #EBE7D9;}
+.personas-grid p {padding: 0 3rem 0 3rem;}
 footer p {padding: 0 15% 0 11%;}
 
 body {font-family: 'Roboto', sans-serif;
 font-size: 1.24rem;
 text-align: center;
 background-color: #0F222D;}
+
+/*small media q*/
+@media only screen and (max-width: 36rem){
+    main p {padding: 0 10% 0 10%;}
+
+    
+    .personas-grid {display: grid;
+        grid-template-columns: 1fr;
+        justify-content: space-between;
+        -ms-grid-column-align: center;
+        }
+    
+        .persona1  {border-left: solid 1px #EBE7D9;}
+        .persona2  {border-right: solid 1px #EBE7D9;}
+
+        body {font-size: .85rem;}
+        
+        nav {justify-content: center;
+        padding: 0;
+           align-items: center;}        
+    nav ul {margin-left: -2.5rem;
+            justify-content:space-around;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            }
+            li {margin: 1rem .1rem 1rem .1rem;
+            align-items: center;
+            padding: 0;}
+            a {font-size: .9rem;}
+}
+    
+/*medium media q*/
+@media only screen and (max-width: 64em) {
+    body {font-size: 1rem;}
+
+    nav, nav ul {justify-content: center;
+    padding: 0;
+    align-items: center;}
+}
