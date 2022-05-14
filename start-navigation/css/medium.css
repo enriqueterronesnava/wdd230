@@ -1,0 +1,11 @@
+@media only screen and (min-width: 35rem) {
+
+    nav button {display: none;}
+
+    nav ul#primarynav {display: flex;
+    margin-left: 2vw;
+    border-left: 1px solid #555;}
+
+    nav ul li a {border: none;
+    border-right: 1px solid #555;}
+}
