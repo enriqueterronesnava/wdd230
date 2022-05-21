@@ -26,14 +26,16 @@
   } 
 
 body {font-family:'Roboto', sans-serif;
-font-size: .8rem;}
-
+font-size: .8rem;
+text-align: center;}
+h2 {margin: 1rem; 
+  text-shadow: 3px 3px 6px black;}
 header nav {background-color: #0F222D;
 display: grid;
 grid-template-columns: 1fr 1fr 20%;
 grid-template-rows: 1fr 40px;
 align-items: center;}
-
+button, a {cursor:pointer;}
 header nav img {grid-row: 1/2;
 grid-column: 1/2;
 width: 100%;
@@ -87,15 +89,23 @@ nav ul.open {display: block;}
     #hamburgerbtn.open span:nth-child(1) {display: none;}
     #hamburgerbtn.open span:nth-child(2) {display: block;}
 
-.hero, .event, .weather, .news, .join {height: 16vh;
-background-color: #EBE7D9;
+.hero, .event, .weather, .news, .join {
+  color: #EBE7D9;
+background-color:#0f222de8;
 margin: 1rem 2rem;
 border: 1px solid rgba(0, 0, 0, 0.219);}
+.weather {display: grid;
+align-items: center;}
+.booked-vertical-prime-in {box-shadow: 10px 10px 10px 7px rgb(0, 0, 0);
+}
+
 .join {display: none;}
 .hero p, .event p, .weather p, .news p, .join p{padding: .1rem 1rem;}    
 
-.spotlights {height: 34vh;
-background-color: #EBE7D9;
+.spotlights {
+  color: #EBE7D9;
+  background-color:#0f222de8;
+
 margin: 0 2rem;
 margin-bottom: 1rem;
 border: 1px solid rgba(0, 0, 0, 0.219);
@@ -126,11 +136,11 @@ color: #EBE7D9;}
 .sp3 {display: none;}
 
 .hero {background-image: url("https://besthqwallpapers.com/Uploads/2-3-2019/82317/thumb2-pineapple-fountain-charleston-south-carolina-usa-evening.jpg");
-  height: 100vh;
   background-size: cover;  
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
+  height: 20vh;
 }
 
 .hero h1 {background-color: #00000081;
@@ -140,12 +150,22 @@ margin: 0rem 0;
 padding: 1rem;
 text-align: center;}
 
-.hero button { background-color: #0f222dd8;
+.hero button { background-color: #cc3f2cd8;
+  text-shadow: 3px 3px 6px black;
 color: #EBE7D9;
-font-size: 3.5rem;
+font-size: 1.2rem;
 position: absolute;
 bottom: 5%;
 right: 5%;}
+.hero button:hover , .join button:hover {background-color: #a02c1dda;}
+.join {justify-items: center;}
+.join button {background-color: #cc3f2cd8;
+  color: #EBE7D9;
+  font-size: 7rem;
+margin: 2rem;
+text-shadow: 3px 3px 6px black;}
 
-.weather{background:#fff;
-border: none;}
+.event a, footer a, .news a {color: #0488c5;}
+
+.weather{background-color: #b3a898;
+padding: 1rem;}

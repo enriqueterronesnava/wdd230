@@ -1,10 +1,10 @@
 /* 35em is also 560px when basefont is 16px */
-@media only screen and (min-width: 35rem) {
-    body {font-size: 1.1rem;}
+@media only screen and (min-width: 37rem) {
+    body {font-size: 1.5rem;}
     body main {display: grid;
         grid-template-columns: 60% 40%;
         grid-template-rows: repeat(5, 1fr);
-        padding: 4rem;}
+        padding: 2rem;}
         .hero, .event, .weather, .news, .join, .spotlights {height:auto;  margin: .5rem 1rem;}
 
         .hero {grid-row: 1/2;
@@ -14,8 +14,9 @@
     .spotlights {grid-row: 3/4;
     grid-column: 1/3;
     display: flex;
-    justify-content: space-around;}
-    
+    justify-content: space-around;
+font-size: 1rem;}
+    .sp1, .sp2 {margin: 0px;}
     .join {display: block;
     grid-column: 1/3;
 grid-row: 4/5;}
@@ -29,6 +30,7 @@ footer .cinfo {display: flex;
 justify-content: center;}
 
 footer .finfo { width: 40%;}
+.hero button {font-size: 2.5rem;}
 } /*end medium */
 
 
