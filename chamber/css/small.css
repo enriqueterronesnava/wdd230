@@ -125,3 +125,27 @@ color: #EBE7D9;}
 .pinfo2 {display: none;}
 .sp3 {display: none;}
 
+.hero {background-image: url("https://besthqwallpapers.com/Uploads/2-3-2019/82317/thumb2-pineapple-fountain-charleston-south-carolina-usa-evening.jpg");
+  height: 100vh;
+  background-size: cover;  
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.hero h1 {background-color: #00000081;
+color: #EBE7D9;
+border-radius: 0.1rem;
+margin: 0rem 0;
+padding: 1rem;
+text-align: center;}
+
+.hero button { background-color: #0f222dd8;
+color: #EBE7D9;
+font-size: 3.5rem;
+position: absolute;
+bottom: 5%;
+right: 5%;}
+
+.weather{background:#fff;
+border: none;}
