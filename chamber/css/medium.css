@@ -1,5 +1,5 @@
 /* 35em is also 560px when basefont is 16px */
-@media only screen and (min-width: 37rem) {
+@media only screen and (min-width: 35rem) {
     body {font-size: 1.5rem;}
     body main {display: grid;
         grid-template-columns: 60% 40%;
