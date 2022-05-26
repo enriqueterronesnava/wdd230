@@ -3,7 +3,7 @@
     body {font-size: 1.5rem;}
     body main {display: grid;
         grid-template-columns: 60% 40%;
-        grid-template-rows: repeat(5, 1fr);
+        grid-template-rows: 30% repeat(4 17.5%);
         padding: 2rem;}
         .hero, .event, .weather, .news, .join, .spotlights {height:auto;  margin: .5rem 1rem;}
 

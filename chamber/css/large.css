@@ -11,8 +11,8 @@
     header nav .date {justify-self: stretch;}
     header nav a {font-size: 1.8rem;}
 
-    body main  {grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    body main  {grid-template-columns: 25% 50% 25%;
+    grid-template-rows: 29% 42% 29%;
 grid-gap: .2rem;}
     p {font-size: 1.2rem;}
     .hero {grid-column: 2/3;

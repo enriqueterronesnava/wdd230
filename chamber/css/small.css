@@ -114,7 +114,7 @@ grid-template-columns: 1fr ;
 grid-template-rows: 1fr 1fr;}
 
 .spotlights div {border: 1px solid rgba(0, 0, 0, 0.253);
-  margin: 1rem;}  
+  margin: .5rem;}  
 .spotlights p {padding: .1rem 1rem;}
 
     footer {
@@ -135,20 +135,20 @@ color: #EBE7D9;}
 .pinfo2 {display: none;}
 .sp3 {display: none;}
 
-.hero {background-image: url("https://besthqwallpapers.com/Uploads/2-3-2019/82317/thumb2-pineapple-fountain-charleston-south-carolina-usa-evening.jpg");
-  background-size: cover;  
-  background-position: center;
-  background-repeat: no-repeat;
-  position: relative;
-  height: 20vh;
-}
-
-.hero h1 {background-color: #00000081;
+.hero {align-content: center;}
+.hero figure {position: relative;
+margin: 0%; 
+width: 100%;
+height: 100%;}
+.hero figure img {width:100%;height: 100%;}
+.hero figure h1 {background-color: #00000081;
 color: #EBE7D9;
 border-radius: 0.1rem;
 margin: 0rem 0;
-padding: 1rem;
-text-align: center;}
+padding: 1.5rem 0rem;
+text-align: center;
+position: absolute;
+width: 100%;}
 
 .hero button { background-color: #cc3f2cd8;
   text-shadow: 3px 3px 6px black;
@@ -161,11 +161,18 @@ right: 5%;}
 .join {justify-items: center;}
 .join button {background-color: #cc3f2cd8;
   color: #EBE7D9;
-  font-size: 7rem;
-margin: 2rem;
+  font-size: 4rem;
+margin: 1rem;
 text-shadow: 3px 3px 6px black;}
 
 .event a, footer a, .news a {color: #0488c5;}
 
 .weather{background-color: #b3a898;
 padding: 1rem;}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
