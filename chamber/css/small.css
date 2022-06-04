@@ -175,6 +175,11 @@ padding: 1rem;}
 .mdiscover  {display: flex;
 flex-direction: column;}
 .mdiscover p {margin: 1rem 20%;}
+.mdiscover img { box-shadow:10px 10px 20px#0F222D ;
+border-radius: 5px;}
+.mdiscover img:hover {border-radius: 280px 25px;
+  opacity: .8;}
+.mdiscover figcaption {margin-top: 1rem;}
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
   content: "";
