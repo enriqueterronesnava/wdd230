@@ -170,6 +170,11 @@ text-shadow: 3px 3px 6px black;}
 .weather{background-color: #b3a898;
 padding: 1rem;}
 
+
+/*Discover*/
+.mdiscover  {display: flex;
+flex-direction: column;}
+.mdiscover p {margin: 1rem 20%;}
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
   content: "";

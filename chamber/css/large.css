@@ -9,7 +9,7 @@
     header nav img {width: 50%;}
     header nav {justify-items: center;}
     header nav .date {justify-self: stretch;}
-    header nav a {font-size: 1.8rem;}
+    header nav a {font-size: 1.4rem;}
 
     body main  {grid-template-columns: 25% 50% 25%;
     grid-template-rows: 29% 42% 29%;
