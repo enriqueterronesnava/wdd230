@@ -3,9 +3,9 @@
 .fa {
     padding: 10px;
     margin: .2rem;
-    font-size: 16px;
-    width: 16px;
-    height: 16px;
+    font-size: 10px;
+    width: 10px;
+    height: 10px;
     text-align: center;
     text-decoration: none;
     border-radius: 50%;
@@ -88,7 +88,8 @@ nav ul.open {display: block;}
     
     #hamburgerbtn.open span:nth-child(1) {display: none;}
     #hamburgerbtn.open span:nth-child(2) {display: block;}
-
+main {padding: 0 2%;
+min-height: 20rem;}
 .hero, .event, .weather, .news, .join {
   color: #EBE7D9;
 background-color:#0f222de8;
@@ -180,6 +181,55 @@ border-radius: 5px;}
 .mdiscover img:hover {border-radius: 280px 25px;
   opacity: .8;}
 .mdiscover figcaption {margin-top: 1rem;}
+
+/*join*/
+.joinform main{display: block;}
+form fieldset {
+margin:2rem 0;
+padding: .5rem 2%;
+text-align: left;
+border: 1px solid #445ba9; 
+border-radius: 10px;}
+
+form legend {
+  margin: 0 1rem;
+  padding: 0 .5rem;
+}
+
+form label.top, form div {display: block;
+padding-top:1rem ;}
+
+form label.top input, form label.top select {-webkit-appearance: none;
+display: block; 
+border: 1px solid #999;
+border-radius: 4px;
+padding: .75rem;
+color: #555;
+width: 70%;
+max-width: 20rem;
+background-color:rgb(0, 0, 0, .1);}
+
+form label.sbs {display: block;
+padding:.75rem 0;}
+form label.sbs input{margin: 0 .5rem;}
+form input.submitBtn {border: none;
+background-color: #b13316;
+color: #EBE7D9;
+width: 80%;
+max-width: 15rem;
+border-radius: 1rem;
+padding: .75rem 1.5rem;
+margin: 1rem 0;
+cursor: pointer;}
+form input.submitBtn:hover{cursor: pointer;
+background-color: #72200e;}
+#desc {width: 60%;display: block;
+height: 15rem;}
+
+form label.top input:required {border-left: red solid 6px;}
+form label.top input:required:valid {border-left: green solid 6px;}
+
+.thank main {display: block;}
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
   content: "";

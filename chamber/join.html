@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="icon" href="images/favicon16.png" type="image/x-icon">
+    <title>Join</title>
+</head>
+<body class="joinform">
+    <header>
+        <nav>
+            <img src="images/logon.png" alt="Las Fuentes logo">
+            <div class="menu"> 
+            <button id="hamburgerbtn"><span>&#9776;</span><span>X</span></button>
+            <ul id="primarynav">
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="index.html">Directory</a></li>
+                <li><a href="index.html">Join</a></li>
+                <li><a href="index.html">Contact</a></li>
+            </ul>
+            </div>
+            <div class="social">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+            </div>
+            <div class="date">
+                <p id="currentdate"></p>
+                <script src="js/currentday.js"></script>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <form action="thankyou.html" method="get">
+            <fieldset>
+                <legend>Applicant Information</legend>
+            <label for="fname" class="top">First name: *
+            <input type="text" name="fname" id="fname" required placeholder="First name"></label>
+
+            <label for="lname" class="top">Last name: *
+            <input type="text" name="lname" id="lname" required placeholder="Last name"></label>
+
+            <label for="title" class="top">Business Position Title:
+            <input title="Business Position" type="text" placeholder="Owner" name="title" id="title" pattern="[a-zA-Z0-9\s_-]+{7}"></label>
+
+            <label for="email" class="top">Email: *
+            <input type="email" name="email" id="email" required placeholder="email@example.com"></label>
+
+            <label for="phone" class="top">Phone: *
+            <input type="tel" name="phone" id="telephone" placeholder="1235551234"required></label>
+
+            <label for="bname" class="top">Business name: *
+            <input type="text" name="bname" id="bname" required></label>
+            </fieldset>
+
+            <fieldset class="member">
+                <legend>Membership Level</legend>
+                <label for="np" class="sbs"><input type="radio" name="Membership" id="np" value="np"> NP Membership <p>You’ll be the first to hear our news and take advantage of our Member-only offers. We'll bring you regular, exclusive deals, offers, and lots of great new ways to boost.</p>
+                    </label> 
+                   
+                <label for="bronze" class="sbs"><input type="radio" name="Membership" id="bronze" value="bronze"> Bronze Membership <p>As a Bronze Member, you'll collect 25% more bonus. This tier bonus is in addition to the bonuses available for our premium cabins, 
+                    bringing you closer to your next reward and upgrade. Some of our partner also offer tier bonuses, helping you to grow your balance faster. 
+                    For details, check the individual found.</p></label>
+                <label for="silver" class="sbs"><input type="radio" name="Membership" id="silver" value="silver"> Silver Membership
+                    <p>As a Silver Member, you'll collect 50% more bonus. This tier bonus is in addition to the bonuses available for our premium cabins, 
+                        bringing you closer to your next reward and upgrade. Some of our partner also offer tier bonuses, helping you to grow your balance faster. 
+                        For details, check the individual found.</p></label>
+                <label for="gold" class="sbs"><input type="radio" name="Membership" id="gold" value="gold"> Gold Membership
+                    <p>As a Gold Member, you'll collect 100% more bonus. This tier bonus is in addition to the bonuses available for our premium cabins, 
+                        bringing you closer to your next reward and upgrade. Some of our partner also offer tier bonuses, helping you to grow your balance faster. 
+                        For details, check the individual found.</p></label>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Business Description</legend>
+                <label for="desc" class="sbs">Describe your business <textarea name="desc" id="desc" cols="30" rows="10"></textarea></label>
+            </fieldset>
+            <input type="hidden" id="date" name="date" value="CurrentTime"><script type="text/javascript">
+                var d = new Date();
+            
+                // Set the value of the "date" field
+                document.getElementById("date").value = d.toDateString();
+            
+                // Set the value of the "time" field
+                var hours = d.getHours();
+                var mins = d.getMinutes();
+                var seconds = d.getSeconds();
+                document.getElementById("time").value = hours + ":" + mins + ":" + seconds;
+            </script>
+
+            <input type="submit" value="Send Information" class="submitBtn">
+        </form>
+    </main>
+    <footer>
+        <div class="cinfo">
+        <div class="flogo">
+        <img src="images/logon.png" alt="fuente">
+        <p>26A Lago De Chapala San Fernando, Tamaulipas</p>
+        </div>
+        <div class="finfo">
+        <p>info@lasfuentescc.org</p>
+        <p>8411-09-7608</p>
+        <a href="index.html">&#127758; Location in the map</a>
+            </div>  
+        </div>
+        
+        <div class="pinfo">
+            <p>&copy;2022 Las Fuentes Chamber</p>
+            <p>Jose Enrique Terrones Nava</p>
+            <p>WDD 230 Project</p>
+            <p id="lastmod"></p>
+            
+
+        </div>
+        <div class="pinfo2">
+            <p>&copy;2022 Las Fuentes Chamber | Enrique Terrones | WDD 230 Project |</p>
+            <p id="lastmod2"></p>
+        </div>
+
+    </footer>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
