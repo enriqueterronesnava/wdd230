@@ -12,7 +12,7 @@ document.getElementById("lastmod").textContent = c;
 document.getElementById("lastmod2").textContent = c;
 
 
-const requestURL = 'C:\Users\enriq\OneDrive\Documentos\Programación\WebFrontend\wdd230\chamber\js\data.json';
+const requestURL = 'https://github.com/enriqueterronesnava/wdd230/blob/main/chamber/js/data.json';
 const cards = document.querySelector('.cards');
 
 async function getcompanies() {
