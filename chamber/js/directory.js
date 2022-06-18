@@ -57,3 +57,20 @@ function buildPcards(data){
 }
 
 getcompanies()
+
+const gridbutton = document.querySelector("#gridy");
+const listbutton = document.querySelector("#listy");
+const display = document.querySelector(".griddd");
+
+gridbutton.addEventListener("click", () => {
+	// example using arrow function
+	display.classList.add("gridy");
+	display.classList.remove("listy");
+});
+
+listbutton.addEventListener("click", showList); // example using defined function
+
+function showList() {
+	display.classList.add("listy");
+	display.classList.remove("gridy");
+}

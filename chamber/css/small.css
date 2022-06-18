@@ -260,12 +260,43 @@ form label.top input:required:valid {border-left: green solid 6px;}
 .direct a {text-decoration: dashed;
 color: #007bb5;}
 .direct {display: block;}
-.griddd{
+.gridy{
   display: grid;
   
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
+.listy {
+	display: flex;
+	flex-direction: column;
+}
+.listy section {
+	display: flex;
+	align-items: center;
+  flex-wrap: nowrap;
+}
 
+.listy section {
+	flex-direction: row;
+	justify-content: left;
+}
+
+.menuu {
+  display: flex;
+  justify-content: space-between;
+	margin: 1rem auto;
+	padding: 0.5rem;
+	text-align: center;
+  width: fit-content;
+  border-radius: 5px;
+}
+.menuu button {margin: .5rem;
+font-size: 32px;}
+
+@media (max-width: 703px) {
+	.menuu button {
+		display: none;
+	}
+}
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
   content: "";
