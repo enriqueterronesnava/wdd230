@@ -235,8 +235,9 @@ form label.top input:required:valid {border-left: green solid 6px;}
 .direct .cards section {
   margin: 0.25rem;
   padding: 0.35rem;
-  background-color: rgb(141, 146, 151);
-  border: 1px solid #bbb;
+  background-color: none;
+  border: 2px solid rgb(110, 110, 110);
+  border-radius: 8px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -248,21 +249,21 @@ form label.top input:required:valid {border-left: green solid 6px;}
 
 .direct img {
   width: auto;
-	max-width: 325px;
-  box-shadow: 0 0 30px #777;
-  height: 200px;
+	max-width: 200x;
+  height: 150px;
 }
 
 .direct h2 {
-  color: rgb(36, 36, 46);
-  margin: 0;
+  text-shadow: none;
 }
 
+.direct a {text-decoration: dashed;
+color: #007bb5;}
 .direct {display: block;}
 .griddd{
   display: grid;
   
-  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
 
 /*----- Clearfix: Force an Element not to collapse -----*/

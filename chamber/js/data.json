@@ -49,28 +49,28 @@
             "membership" : "Silver"
         },
         {
-            "name" : "d",
-            "address" : "",
-            "phone" : "",
-            "websiteURL" : "",
-            "imageURL" : "",
-            "membership" : ""
+            "name" : "Facebook",
+            "address" : "Headquarters 1 Hacker Way Menlo Park, CA 94025",
+            "phone" : "(650) 543-4801",
+            "websiteURL" : "https://www.facebook.com/",
+            "imageURL" : "https://1000marcas.net/wp-content/uploads/2019/12/Facebook-logo-600x338.png",
+            "membership" : "Bronze"
         },
         {
-            "name" : "d",
-            "address" : "",
-            "phone" : "",
-            "websiteURL" : "",
-            "imageURL" : "",
-            "membership" : ""
+            "name" : "Alibaba",
+            "address" : "Binjiang District Hangzhou 310052",
+            "phone" : "571-8502-2088",
+            "websiteURL" : "https://www.alibaba.com/",
+            "imageURL" : "https://1000marcas.net/wp-content/uploads/2020/03/logo-Alibaba-500x281.png",
+            "membership" : "NP"
         },
         {
-            "name" : "d",
-            "address" : "",
-            "phone" : "",
-            "websiteURL" : "",
-            "imageURL" : "",
-            "membership" : ""
+            "name" : "Johnson & Johnson ",
+            "address" : "One Johnson & Johnson Plaza, New Brunswick, New Jersey 08933",
+            "phone" : "(732) 524-0400.",
+            "websiteURL" : "https://www.jnj.com/",
+            "imageURL" : "https://1000marcas.net/wp-content/uploads/2021/05/Johnson-and-Johnson-logo-500x250.jpg",
+            "membership" : "Silver"
         }
     ] 
 }

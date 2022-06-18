@@ -37,20 +37,21 @@ function buildPcards(data){
         let membership = document.createElement("p");
 
         name.innerHTML = companie.name;
-        address.innerHTML = `Address: ${companie.address}`;
-        phone.innerHTML = `Phone number: ${companie.phone}`;
+        address.innerHTML = companie.address;
+        phone.innerHTML = companie.phone;
         web.innerHTML = "Web page";
+        web.setAttribute('href',companie.websiteURL)
         img.setAttribute('src', companie.imageURL);
         img.setAttribute('alt', 'company logo');
         img.setAttribute('loading', 'lazy');
         membership.innerHTML = `Membership Lvl: ${companie.membership}`;
 
         cards.append(card);
+        card.append(img);
         card.append(name);
         card.append(address);
         card.append(phone);
         card.append(web);
-        card.append(img);
         card.append(membership);
     });
 }
