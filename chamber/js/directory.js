@@ -12,21 +12,21 @@ document.getElementById("lastmod").textContent = c;
 document.getElementById("lastmod2").textContent = c;
 
 
-const requestURL = 'https://github.com/enriqueterronesnava/wdd230/blob/main/chamber/js/data.json';
+const requestURL = 'https://enriqueterronesnava.github.io/wdd230/chamber/js/data.json';
 const cards = document.querySelector('.cards');
 
 async function getcompanies() {
     let response = await fetch(requestURL);
     if (response.ok) {
     let data = await response.json();
-    //console.log(data);
+    console.log(data);
     buildPcards(data);
     } else {
         throw Error(response.statusText);
     }
 }
 
-function getcompanies(data){
+function buildPcards(data){
     data.companies.forEach(companie => {
         let card = document.createElement("section");
         let name = document.createElement("h2");
@@ -36,7 +36,7 @@ function getcompanies(data){
         name.innerHTML = `Name: ${companie.name}`;
         address.innerHTML = `Address: ${companie.address}`
         card.append(name);
-        card.append
+        card.append(address);
     });
 }
 
