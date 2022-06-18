@@ -1,0 +1,76 @@
+{
+    "companies": [
+        {
+            "name" : "Microsoft",
+            "address" : "One Microsoft Way ; Redmond ; Washington ; 98052-6399 ; USA.",
+            "phone" : "(425) 706-7329",
+            "websiteURL" : "https://www.microsoft.com/",
+            "imageURL" : "https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b?ver=5c31",
+            "membership" : "Silver"
+        },
+        {
+            "name" : "Apple",
+            "address" : "One Apple Park Way; Cupertino, CA 95014, U.S.A.",
+            "phone" : "800-692-7753",
+            "websiteURL" : "https://www.apple.com/",
+            "imageURL" : "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/488px-Apple_logo_black.svg.png",
+            "membership" : "NP"
+        },
+        {
+            "name" : "Amazon",
+            "address" : "410 Terry Ave N, Seattle 98109, WA.",
+            "phone" : "888-280-4331",
+            "websiteURL" : "https://www.amazon.com/",
+            "imageURL" : "https://1000marcas.net/wp-content/uploads/2019/11/Amazon-logo-600x375.png",
+            "membership" : "Gold"
+        },
+        {
+            "name" : "Alphabet",
+            "address" : "1600 Amphitheater Parkway Mountain View, CA 94043 USA",
+            "phone" : "(650) 253-0000",
+            "websiteURL" : "https://abc.xyz/",
+            "imageURL" : "https://1000logos.net/wp-content/uploads/2021/05/Alphabet-logo-500x281.png",
+            "membership" : "Gold"
+        },
+        {
+            "name" : "Berkshire",
+            "address" : "3555 Farnam Street Omaha, NE 68131",
+            "phone" : "402-346-1400",
+            "websiteURL" : "https://www.berkshirehathaway.com/",
+            "imageURL" : "https://1000marcas.net/wp-content/uploads/2022/05/Berkshire-Hathaway-Logo-500x281.png",
+            "membership" : "Gold"
+        },
+        {
+            "name" : "Tencent",
+            "address" : "United States Palo Alto 2747 Park Blvd",
+            "phone" : "800 906 020",
+            "websiteURL" : "https://www.tencent.com/",
+            "imageURL" : "https://1000marcas.net/wp-content/uploads/2021/12/Tencent-Logo-500x281.png",
+            "membership" : "Silver"
+        },
+        {
+            "name" : "d",
+            "address" : "",
+            "phone" : "",
+            "websiteURL" : "",
+            "imageURL" : "",
+            "membership" : ""
+        },
+        {
+            "name" : "d",
+            "address" : "",
+            "phone" : "",
+            "websiteURL" : "",
+            "imageURL" : "",
+            "membership" : ""
+        },
+        {
+            "name" : "d",
+            "address" : "",
+            "phone" : "",
+            "websiteURL" : "",
+            "imageURL" : "",
+            "membership" : ""
+        }
+    ] 
+}
