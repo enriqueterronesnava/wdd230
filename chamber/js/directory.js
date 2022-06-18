@@ -27,16 +27,30 @@ async function getcompanies() {
 }
 
 function buildPcards(data){
-    data.companies.forEach(companie => {
+    data.comp.forEach(companie => {
         let card = document.createElement("section");
         let name = document.createElement("h2");
-        let address = document.createElement("p");
-        
+        let phone = document.createElement("p");
+        let web = document.createElement("a");
+        let img = document.createElement("img");
+        let membership = document.createElement("p");
 
-        name.innerHTML = `Name: ${companie.name}`;
-        address.innerHTML = `Address: ${companie.address}`
+        name.innerHTML = companie.name;
+        address.innerHTML = `Address: ${companie.address}`;
+        phone.innerHTML = `Phone number: ${companie.phone}`;
+        web.innerHTML = "Web page";
+        img.setAttribute('src', companie.imageURL);
+        img.setAttribute('alt', 'company logo');
+        img.setAttribute('loading', 'lazy');
+        membership.innerHTML = `Membership Lvl: ${companie.membership}`;
+
+        cards.append(card);
         card.append(name);
         card.append(address);
+        card.append(phone);
+        card.append(web);
+        card.append(img);
+        card.append(membership);
     });
 }
 
