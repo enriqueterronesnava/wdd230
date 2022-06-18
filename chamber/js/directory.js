@@ -30,6 +30,7 @@ function buildPcards(data){
     data.comp.forEach(companie => {
         let card = document.createElement("section");
         let name = document.createElement("h2");
+        let address = document.createElement("p");
         let phone = document.createElement("p");
         let web = document.createElement("a");
         let img = document.createElement("img");
