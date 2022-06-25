@@ -168,9 +168,14 @@ text-shadow: 3px 3px 6px black;}
 
 .event a, footer a, .news a {color: #0488c5;}
 
-.weather{background-color: #b3a898;
-padding: 1rem;}
+.weather{background-color: #80786d;
+  font-size:x-large;
+  text-shadow: 4px 4px 8px black;
+padding: 0rem;
+display: block;}
 
+.weather figure{border-bottom: 1.2px solid rgb(95, 95, 95);
+padding-bottom: 1.2rem;}
 
 /*Discover*/
 .mdiscover  {display: flex;
