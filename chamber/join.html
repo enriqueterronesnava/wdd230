@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/large.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="icon" href="images/favicon16.png" type="image/x-icon">
-    <title>Join</title>
+    <title>Join Us</title>
 </head>
 <body class="joinform">
     <header>
@@ -23,7 +23,7 @@
                 <li><a href="discover.html">Discover</a></li>
                 <li><a href="directory.html">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
-                <li><a href="index.html">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
             </div>
             <div class="social">
@@ -37,7 +37,7 @@
         </nav>
     </header>
     <main>
-        <form action="thankyou.html" method="get">
+        <form action="thankyou.html" method="get" class="joininfo">
             <fieldset>
                 <legend>Applicant Information</legend>
             <label for="fname" class="top">First name: *
@@ -58,23 +58,29 @@
             <label for="bname" class="top">Business name: *
             <input type="text" name="bname" id="bname" required></label>
             </fieldset>
+            
+                <div class="medals">
+                    <h2>Non-Profit</h2>
+                    <p>Only for solopreneurs and small non-profits seeking networking access to Chamber programming. One representative is registered as a Chamber member. Join at this level if you want to participate in Chamber activities but don’t need to promote your business via our marketing programs.</p>
+                    <h2>Bronze🥉</h2>
+                    <p>For small to medium-sized businesses and non-profit organizations seeking Chamber access AND marketing and promotional exposure. Join at this level if you want to use Chamber marketing programs to promote your business. Up to three representatives or employees may be registered as members.</p>
+                    <h2>Silver🥈</h2>
+                    <p>Made for medium to large companies and non-profit organizations seeking a higher profile opportunity to market and demonstrate investment in the Superior community. Up to five representatives or employees may be registered as members.</p>
+                    <h2>Gold🥇</h2>
+                    <p>Our top membership level provides the highest visibility and indication of community investment. Premier access and influence. Up to 10 individuals may be registered as representatives.</p>
+                </div>
 
             <fieldset class="member">
                 <legend>Membership Level</legend>
-                <label for="np" class="sbs"><input type="radio" name="Membership" id="np" value="np"> NP Membership <p>You’ll be the first to hear our news and take advantage of our Member-only offers. We'll bring you regular, exclusive deals, offers, and lots of great new ways to boost.</p>
+                
+                <label for="np" class="sbs"><input type="radio" name="Membership" id="np" value="np"> NP Membership
                     </label> 
                    
-                <label for="bronze" class="sbs"><input type="radio" name="Membership" id="bronze" value="bronze"> Bronze Membership <p>As a Bronze Member, you'll collect 25% more bonus. This tier bonus is in addition to the bonuses available for our premium cabins, 
-                    bringing you closer to your next reward and upgrade. Some of our partner also offer tier bonuses, helping you to grow your balance faster. 
-                    For details, check the individual found.</p></label>
+                <label for="bronze" class="sbs"><input type="radio" name="Membership" id="bronze" value="bronze"> Bronze Membership </label>
                 <label for="silver" class="sbs"><input type="radio" name="Membership" id="silver" value="silver"> Silver Membership
-                    <p>As a Silver Member, you'll collect 50% more bonus. This tier bonus is in addition to the bonuses available for our premium cabins, 
-                        bringing you closer to your next reward and upgrade. Some of our partner also offer tier bonuses, helping you to grow your balance faster. 
-                        For details, check the individual found.</p></label>
+                    </label>
                 <label for="gold" class="sbs"><input type="radio" name="Membership" id="gold" value="gold"> Gold Membership
-                    <p>As a Gold Member, you'll collect 100% more bonus. This tier bonus is in addition to the bonuses available for our premium cabins, 
-                        bringing you closer to your next reward and upgrade. Some of our partner also offer tier bonuses, helping you to grow your balance faster. 
-                        For details, check the individual found.</p></label>
+                    </label>
             </fieldset>
             
             <fieldset>

@@ -27,6 +27,7 @@ async function getcompanies() {
 }
 
 function buildPcards(data){
+    
     data.comp.forEach(companie => {
         let card = document.createElement("section");
         let name = document.createElement("h2");

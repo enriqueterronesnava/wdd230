@@ -6,7 +6,7 @@
             "phone" : "(425) 706-7329",
             "websiteURL" : "https://www.microsoft.com/",
             "imageURL" : "https://1000marcas.net/wp-content/uploads/2019/12/Microsoft-Logo-600x338.png",
-            "membership" : "Silver"
+            "membership" : "Silver🥈"
         },
         {
             "name" : "Apple",
@@ -14,7 +14,7 @@
             "phone" : "800-692-7753",
             "websiteURL" : "https://www.apple.com/",
             "imageURL" : "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/488px-Apple_logo_black.svg.png",
-            "membership" : "NP"
+            "membership" : "Non-Profit"
         },
         {
             "name" : "Amazon",
@@ -22,7 +22,7 @@
             "phone" : "888-280-4331",
             "websiteURL" : "https://www.amazon.com/",
             "imageURL" : "https://1000marcas.net/wp-content/uploads/2019/11/Amazon-logo-600x375.png",
-            "membership" : "Gold"
+            "membership" : "Gold🥇"
         },
         {
             "name" : "Alphabet",
@@ -30,7 +30,7 @@
             "phone" : "(650) 253-0000",
             "websiteURL" : "https://abc.xyz/",
             "imageURL" : "https://1000logos.net/wp-content/uploads/2021/05/Alphabet-logo-500x281.png",
-            "membership" : "Gold"
+            "membership" : "Gold🥇"
         },
         {
             "name" : "Berkshire",
@@ -38,7 +38,7 @@
             "phone" : "402-346-1400",
             "websiteURL" : "https://www.berkshirehathaway.com/",
             "imageURL" : "https://1000marcas.net/wp-content/uploads/2022/05/Berkshire-Hathaway-Logo-500x281.png",
-            "membership" : "Gold"
+            "membership" : "Gold🥇"
         },
         {
             "name" : "Tencent",
@@ -46,7 +46,7 @@
             "phone" : "800 906 020",
             "websiteURL" : "https://www.tencent.com/",
             "imageURL" : "https://1000marcas.net/wp-content/uploads/2021/12/Tencent-Logo-500x281.png",
-            "membership" : "Silver"
+            "membership" : "Silver🥈"
         },
         {
             "name" : "Facebook",
@@ -54,7 +54,7 @@
             "phone" : "(650) 543-4801",
             "websiteURL" : "https://www.facebook.com/",
             "imageURL" : "https://1000marcas.net/wp-content/uploads/2019/12/Facebook-logo-600x338.png",
-            "membership" : "Bronze"
+            "membership" : "Bronze🥉"
         },
         {
             "name" : "Alibaba",
@@ -62,7 +62,7 @@
             "phone" : "571-8502-2088",
             "websiteURL" : "https://www.alibaba.com/",
             "imageURL" : "https://1000marcas.net/wp-content/uploads/2020/03/logo-Alibaba-500x281.png",
-            "membership" : "NP"
+            "membership" : "Non-Profit"
         },
         {
             "name" : "Johnson & Johnson ",
@@ -70,7 +70,7 @@
             "phone" : "(732) 524-0400.",
             "websiteURL" : "https://www.jnj.com/",
             "imageURL" : "https://1000marcas.net/wp-content/uploads/2021/05/Johnson-and-Johnson-logo-500x250.jpg",
-            "membership" : "Silver"
+            "membership" : "Silver🥈"
         }
     ] 
 }

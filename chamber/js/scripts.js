@@ -25,3 +25,4 @@ if (timepassed !==0) {
     else{timedisplay.textContent = `This is your first visit!`;};
 
 localStorage.setItem("olddate", newdate);
+

@@ -48,6 +48,14 @@ justify-content: center;}
 #lastmod2 {padding-left: .5rem;}
 .pinfo2 {display: flex;
 justify-content: center;}
+
+
+#contactpage {display: flex;
+    justify-content: space-around;}
+.contactbanner { font-size: 2.5rem;}
+.contactbanner img {height: 25vh;}
+
+
 } /*end large */
 .member .sbs {display: flex;}
 .member .sbs p {margin-left: 1rem; font-size: .9rem; margin: 0 5rem;}

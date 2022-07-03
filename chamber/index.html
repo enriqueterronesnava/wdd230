@@ -23,7 +23,7 @@
                 <li><a href="discover.html">Discover</a></li>
                 <li><a href="directory.html">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
-                <li><a href="index.html">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
             </div>
             <div class="social">
@@ -40,7 +40,9 @@
         <section class="hero">
             <figure>
                 <h1>Welcome to Las Fuentes</h1>
-                <button>Join the chamber</button>
+                <form method="get" action="join.html">
+                <button action>Join the chamber</button>
+                </form>
                 <img src="images/wdd230-org.jpg" alt="ofice"
                 srcset="images/wdd230-org300.jpg 300w,
                         images/wdd230-org500.jpg 500w, 
@@ -72,27 +74,14 @@
 
                 “We are facing a daunting set of global challenges <a href="index.html">[...]</a>"</p>
         </section>
+
         <section class="spotlights">
-            <div class="sp1">
-                <h2>Thankful Transport</h2>
-                <img src="images/truck1.png" alt="truck" width="119px" style="filter: invert(100%);">
-                <p>We got it there for you!</p>
-                <p>hello@thankfultransport.com <br>+999-9999-9999 Website</p>
-            </div>
-            <div class="sp2">
-                <h2>Code Primera</h2>
-                <img src="images/code.png" alt="code"  width="119px" style="filter: invert(100%);">
-                <p>An after school coding instructional program</p>
-                <p>contact@codeprimera.com <br>+999-9999-9999 | Website</p>
-            </div>
-            <div class="sp3">
-                <h2>Build A Treefort</h2>
-                <img src="images/tree.png" alt="tree" width="119px" style="filter: invert(100%);">
-                <p>Over 1000 Plans</p>
-                <p>builda@treefort.com <br>+999-9999-9999 Website</p>
-            </div>
+            <div class="sp1"></div>
+            <div class="sp2"></div>
+            <div class="sp3"></div>
         </section>
-        <section class="join clearfix"><button>Join Us!</button> <p class="clearfix">Discover how to join the Chamber of commerce and how it will benefit your organization</p>
+
+        <section class="join clearfix"><form action="join.html" method="get"><button>Join Us!</button></form> <p class="clearfix">Discover how to join the Chamber of commerce and how it will benefit your organization</p>
         </section>
     </main>
     <footer>
@@ -123,6 +112,6 @@
         <p style="font-size: .9rem;">Weather data from OpenWeatherMap.com</p>
     </footer>
     <script src="js/scripts.js"></script>
-    
+    <script src="js/ads.js" defer></script>
 </body>
 </html>

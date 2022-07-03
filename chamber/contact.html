@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="icon" href="images/favicon16.png" type="image/x-icon">
+    <title>Contact Us</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="images/logon.png" alt="Las Fuentes logo">
+            <div class="menu"> 
+            <button id="hamburgerbtn"><span>&#9776;</span><span>X</span></button>
+            <ul id="primarynav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="index.html">Contact</a></li>
+            </ul>
+            </div>
+            <div class="social">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+            </div>
+            <div class="date">
+                <p id="currentdate"></p>
+                <script src="js/currentday.js"></script>
+            </div>
+        </nav>
+    </header>
+    <main id="maincontact">
+        <div>
+            <figure class="contactbanner">
+                <h1>CONTACT US</h1>
+                <img src="images/bannercontact.jpg" alt="Banner"
+                srcset="images/bannercontact300.jpg 300w,
+                        images/bannercontact500.jpg 500w, 
+                        images/bannercontact800.jpg 800w,
+                        images/bannercontact1100.jpg 1100w">
+            </figure>
+        </div>
+        <div id="contactpage">
+            <form action="thankyou.html" method="get">
+                <fieldset>
+                    <h2>CONTACT FORM</h2>
+                    <p>* Indicates required field</p>
+                <label for="name" class="top">Name*
+                <input type="text" name="name" id="name" required></label>
+    
+                <label for="email" class="top">Email Address *
+                <input type="email" name="email" id="email" required placeholder="email@example.com"></label>
+    
+                <label for="concern" class="top">Question/Concern*
+                <input type="text" name="concern" id="concern" required></label>
+                </fieldset>
+                
+                <input type="hidden" id="date" name="date" value="CurrentTime"><script type="text/javascript">
+                    var d = new Date();
+                
+                    // Set the value of the "date" field
+                    document.getElementById("date").value = d.toDateString();
+                
+                    // Set the value of the "time" field
+                    var hours = d.getHours();
+                    var mins = d.getMinutes();
+                    var seconds = d.getSeconds();
+                    document.getElementById("time").value = hours + ":" + mins + ":" + seconds;
+                </script>
+    
+                <input type="submit" value="Send Information" class="submitBtn">
+            </form>
+
+            <div>
+                <h2>Contact Us</h2>
+                <h3>Address</h3>
+                <p>Las Fuentes Chamber of Commerce <br> 31 N Church Street <br>Las Fuentes, Tamaulipas</p>
+                <h3>Phone</h3>
+                <p>909-110-8205</p>
+                <h3>Email</h3>
+                <p>info@lasfuentescc.org</p>
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="cinfo">
+        <div class="flogo">
+        <img src="images/logon.png" alt="fuente">
+        <p>26A Lago De Chapala San Fernando, Tamaulipas</p>
+        </div>
+        <div class="finfo">
+        <p>info@lasfuentescc.org</p>
+        <p>8411-09-7608</p>
+        <a href="index.html">&#127758; Location in the map</a>
+            </div>  
+        </div>
+        
+        <div class="pinfo">
+            <p>&copy;2022 Las Fuentes Chamber</p>
+            <p>Jose Enrique Terrones Nava</p>
+            <p>WDD 230 Project</p>
+            <p id="lastmod"></p>
+            
+
+        </div>
+        <div class="pinfo2">
+            <p>&copy;2022 Las Fuentes Chamber | Enrique Terrones | WDD 230 Project |</p>
+            <p id="lastmod2"></p>
+        </div>
+    </footer>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

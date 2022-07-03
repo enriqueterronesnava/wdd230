@@ -27,7 +27,9 @@
 
 body {font-family:'Roboto', sans-serif;
 font-size: .8rem;
-text-align: center;}
+text-align: center;
+background: rgb(126,155,185);
+background: linear-gradient(0deg, rgba(126,155,185,1) 0%, rgba(201,209,222,1) 42%, rgba(244,249,249,1) 76%);}
 h2 {margin: 1rem; 
   text-shadow: 3px 3px 6px black;}
 header nav {background-color: #0F222D;
@@ -189,8 +191,11 @@ border-radius: 5px;}
 
 /*join*/
 .joinform main{display: block;}
-form fieldset {
-margin:2rem 0;
+.medals {margin: 0 15%;}
+.joininfo fieldset {
+box-shadow: 2px 2px 10px gray;
+background-color: white;
+margin:2rem 4rem;
 padding: .5rem 2%;
 text-align: left;
 border: 1px solid #445ba9; 
@@ -228,8 +233,8 @@ margin: 1rem 0;
 cursor: pointer;}
 form input.submitBtn:hover{cursor: pointer;
 background-color: #72200e;}
-#desc {width: 60%;display: block;
-height: 15rem;}
+#desc {width: 100%;display: block;
+height: 10%;}
 
 form label.top input:required {border-left: red solid 6px;}
 form label.top input:required:valid {border-left: green solid 6px;}
@@ -240,7 +245,7 @@ form label.top input:required:valid {border-left: green solid 6px;}
 .direct .cards section {
   margin: 0.25rem;
   padding: 0.35rem;
-  background-color: none;
+  background-color: white;
   border: 2px solid rgb(110, 110, 110);
   border-radius: 8px;
   display: flex;
@@ -302,6 +307,48 @@ font-size: 32px;}
 		display: none;
 	}
 }
+
+/*--------Contact----------*/
+#maincontact {display: block;
+padding: 0;
+}
+#contactpage {display:block;
+margin: 10% 10%;
+}
+
+.contactbanner {position: relative;
+width: 100vw;
+margin: 0;}
+.contactbanner img {width: 100%;
+  height: 20vh;
+filter: grayscale(15%);
+filter: contrast(75%);
+}
+.contactbanner h1 {position:absolute;
+margin-left: auto;
+margin-bottom: auto;
+margin-right: auto;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+text-align: center;
+  text-shadow:4px 3px 4px rgb(36, 36, 36);
+  z-index: 1;
+  color: rgb(250, 250, 250);}
+
+#contactpage form fieldset, #contactpage h2 {margin: 0;}
+#contactpage h2 {text-shadow: 2px 2px 4px gray;}
+#contactpage form fieldset {border-radius: 0;
+background-color: white;
+border: solid black 1px;
+box-shadow: 4px 4px 15px black;
+padding: 2rem;}
+#contactpage{text-align: left;}
+
+
+
+
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
   content: "";
