@@ -64,7 +64,7 @@ function displayAdvertising(data) {
     spot1Email.innerHTML = companie1.membership;
 
     spot1Number.setAttribute('id', 'spot1-number');
-    spot1Number.innerHTML = `${companie1.phone} | <a href="https//:${companie1.websiteURL}" target:"_blank>Website</a>`;
+    spot1Number.innerHTML = `${companie1.phone} | <a href="${companie1.websiteURL}" target:"_blank>Website</a>`;
 
     placeHolder1.appendChild(spot1Img);
     placeHolder1.appendChild(spot1Email);
@@ -87,7 +87,7 @@ function displayAdvertising(data) {
     spot2Email.innerHTML = companie2.membership;
 
     spot2Number.setAttribute('id', 'spot2-number');
-    spot2Number.innerHTML = `${companie2.phone} | <a href="https//:${companie2.websiteURL}" target:"_blank>Website</a>`;
+    spot2Number.innerHTML = `${companie2.phone} | <a href="${companie2.websiteURL}" target:"_blank>Website</a>`;
 
     placeHolder2.appendChild(spot2Img);
     placeHolder2.appendChild(spot2Email);
@@ -109,7 +109,7 @@ function displayAdvertising(data) {
     spot3Email.innerHTML = companie3.membership;
 
     spot3Number.setAttribute('id', 'spot3-number');
-    spot3Number.innerHTML = `${companie3.phone} | <a href="https//:${companie3.websiteURL}" target:"_blank>Website</a>`;
+    spot3Number.innerHTML = `${companie3.phone} | <a href="${companie3.websiteURL}" target:"_blank>Website</a>`;
 
     placeHolder3.appendChild(spot3Img);
     placeHolder3.appendChild(spot3Email);
