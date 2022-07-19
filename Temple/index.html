@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="shortcut icon" href="images/temple-favicon1.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/6f4f67c715.js" crossorigin="anonymous"></script>
+    <title>Temple Inn & Suites</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="nav-info"> 
+                <p class="nav-address"><i class="fa-solid fa-building"></i> 4800 Montgomery Ln #300 <br> Bethesda, MD 20814</p>
+                <p class="nav-number"><i class="fa-solid fa-phone"></i><span class="callus-txt">Call us now:</span> (000)123-4567</p>
+                <div class="weather">
+                    <figure>
+                        <img src="" alt="" id="weather-icon" />
+                        <span id="current-temp"></span>&deg;C
+                        <figcaption class="weather-desc">    
+                        </figcaption>
+                        <i class="fa-solid fa-droplet"></i><span class="humidity-txt">Humidity</span><span id="humidity"></span>
+                    </figure>
+                    <script src="js/weatherapi.js"></script>
+                </div>
+                <div class="social-nav">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="menu">
+                <div class="nav-logo">
+                    <img src="images/temple-logo64.png" alt="Temple logo"><p>Temple Inn & Suites</p>
+                </div>
+                <ul id="primarynav">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="temple.html">Temple</a></li>
+                    <li><a href="reservation.html">Reservation</a></li>
+                    <li><a href="services.html">Services</a></li>
+                </ul>
+                
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="call-action">
+            <figure>
+                <h2>Spend Quality Moments With Us</h2>
+                <p>The most memorable rest time starts here.</p>
+                <form action="#" method="get">
+                    <button role="button">Reserve now</button>
+                </form>
+                <img class="action-bkground" src="images/hotelroom.jpg" alt="hotel room"
+                srcset="images/hotelroom300.jpg 300w,
+                images/hotelroom500.jpg 500w,
+                images/hotelroom800.jpg 800w,
+                images/hotelroom1100.jpg 1100w">
+            </figure>
+        </div>
+        <div class="temple-summary">
+            <h2>Washington D.C. Temple</h2>
+            <p><b>Address</b><br><a href="#">9900 Stoneybrook Dr
+                Kensington <br> MD 20895-3199
+                United States</a>
+            </p>
+            <p>16th dedicated temple in operation; closed for renovation; preparing for rededication; scheduled to be rededicated on 14 August 2022</p>
+            <p class="main-services"><h3>Services</h3>Clothing rental available <br> NO cafeteria food served <br> NO patron housing available <br> Distribution center nearby</p>
+            <figure>
+                <img src="images/Wtemple.jpg" alt="Washington D.C. Temple"
+                    srcset="images/Wtemple300.jpg 300w,
+                    images/Wtemple500.jpg 500w, 
+                    images/Wtemple.jpg 800w,
+                    images/Wtemple1100.jpg 1100w">
+                </figure>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="contact-info">
+            <h2>Contact Information</h2>
+            <p><b>Address</b><br> 4800 Montgomery Ln #300, Bethesda, MD 20814</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d775.3512432983997!2d-77.09607897079233!3d38.98325284120325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b8f21f1%3A0x9a0b3cde14da0a60!2s4800%20Montgomery%20Ln%20%23300%2C%20Bethesda%2C%20MD%2020814%2C%20EE.%20UU.!5e0!3m2!1ses!2smx!4v1657760376264!5m2!1ses!2smx" width="250" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p><b><i class="fa-solid fa-phone"></i></b> (000)123-4567</p>
+            <p><b><i class="fa-solid fa-envelope"></i></b> <a href="#">email@example.com</a></p>
+        </div>
+
+        <div class="social-media-links">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+
+        <div class="send-us-message">
+            <form action="#" method="get" class="send-message-form">
+                <fieldset>
+                    <h3>Send Us A Message</h3>
+                    <input type="text" name="f&lname" id="f&lname" required placeholder="First & Last Name">
+                    <input type="text" name="eaddress" id="eaddress" required placeholder="Email Address">
+                    <textarea name="message" id="message" cols="30" rows="6" placeholder="Write your message here..."></textarea>
+                    <input type="submit" value="Send Message" class="submitBtn">
+                </fieldset>
+            </form>
+        </div>
+    </footer>
+</body>
+</html>
