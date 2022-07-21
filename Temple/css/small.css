@@ -159,7 +159,7 @@ p.wainfo {border-left: 8px solid #FACB60ff; background-color: rgb(223, 231, 230)
 
 /*----------- FOOTER --------------*/
 footer {color: #BBBCB8ff;
-    background-color: rgb(41, 37, 28);
+  background-color: #333;
     padding: .5rem 5%;
     text-align: center;
 }
@@ -293,13 +293,14 @@ article section:hover {
 	flex-direction: row;
 	justify-content: left;
 }
-
+.list section p {display: none;}
 .list section > * {
 	margin: 0 1rem;
 	text-align: left;
 }
 
 .list section img {
+  height: 100px;
 	display: none; /* smaller viewports only */
 }
 
@@ -320,15 +321,59 @@ article section a {
 	font-size: 0.9rem;
 }
 
-article img {
+article img {filter:grayscale(20%) drop-shadow(5px 5px 15px rgb(89, 92, 89));
     border-radius: 3px;
 	max-width: 100%; /* Images are jerks - Seattle*/
+}
+
+.button-17 {
+  align-items: center;
+  appearance: none;
+  background-color: #fff;
+  border-radius: 24px;
+  border-style: none;
+  box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+  box-sizing: border-box;
+  color: #3c4043;
+  cursor: pointer;
+  display: inline-flex;
+  fill: currentcolor;
+  font-family: "Google Sans",Roboto,Arial,sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 30px;
+  justify-content: center;
+  letter-spacing: .25px;
+  line-height: normal;
+  max-width: 100%;
+  overflow: visible;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: auto;
+  will-change: transform,opacity;
+  z-index: 0;
+}
+
+.button-17:hover {
+  background: #F6F9FE;
+  color: #174ea6;
+}
+
+.button-17:active {
+  box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+  outline: none;
 }
 
 @media (min-width: 700px) {
 	.list section img {
 		display: block;
 	}
+  .list section p {display: block;}
 }
 
 
@@ -345,6 +390,9 @@ div.elem-group.inlined {
   }
 
 .reservation-form {margin: 1.5rem auto;}  
+
+.reservartion-banner {filter:grayscale(20%) drop-shadow(5px 5px 15px rgb(89, 92, 89)); margin-top:1rem; display: flex; background-size: cover; background-repeat: no-repeat; background-image: url("https://wallpaperstock.net/wallpapers/thumbs1/44115hd.jpg"); height: 200px;}
+.reservartion-banner h2{width: 100%; text-align: center; color:#eee; margin: auto 0; padding: .5rem; background-color: rgba(51, 51, 51, 0.61);}
 .reservation-form label {display: block;
     padding-bottom: 10px;
     font-size: 1.25em;}
@@ -400,3 +448,211 @@ hr {
 .reservation-form button:hover {
     box-shadow: rgb(252, 177, 2) 0 7px 7px;
 }
+
+/*--------------------Services---------------*/
+.services-main{padding:0; display: grid;}
+.services-main figure figcaption {
+  border-radius: 5px 5px 0 0;
+  background-color: #333;
+  color: white;
+  font-style: italic;
+  padding: 2px;
+  text-align: center;
+}
+.services-main figure img{float: left; border-radius: 3px; filter:grayscale(20%) drop-shadow(5px 5px 15px rgb(89, 92, 89))}
+.services-main figure {
+  padding: 4px;
+  margin: auto;
+  position: relative;
+}
+.ten {display: flex; justify-content: center;}
+.ten h1 {
+  font-size:1.2rem; font-weight:500; text-transform:uppercase;
+}
+.missionary h1 {width: 70%;}
+.ten h1:before {
+    background-image: linear-gradient(-45deg, rgb(96, 181, 250), rgb(152, 2, 252));
+    border-radius: 0.25rem;
+    content: '';
+    display: block;
+    height: 0.35rem;
+    width: 100%;
+    margin-bottom: .5rem;
+}
+#playfigcaption,#familysearch {display: none;}
+
+.serviceBox{
+  color: #db7100;
+  font-family: 'Zen Maru Gothic', sans-serif;
+  text-align: center;
+  padding: 25px 10px 0;
+  position: relative;
+  z-index: 1;
+}
+.serviceBox:before{
+  content: "";
+  height: 80px;
+  width: 80px;
+  border: 2px dashed #db7100;
+  border-radius: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: -1;
+}
+.serviceBox .title{
+  color: #fff;
+  background-color: #db7100;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 4px 10px 6px;
+  margin: 0 -10px 5px;
+  display: inline-block;
+}
+.serviceBox .service-icon{
+  font-size: 45px;
+  margin: 0 0 70px;
+}   
+.serviceBox .description{
+  color: #555;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 23px;
+}
+.serviceBox.gray{ color: #5A696E; }
+.serviceBox.gray:before{ border-color: #5A696E; }
+.serviceBox.gray .title{ background-color: #5A696E; }
+.serviceBox.pink{ color: #F1605D; }
+.serviceBox.pink:before{ border-color: #F1605D; }
+.serviceBox.pink .title{ background-color: #F1605D; }
+.serviceBox.purple{ color: #8D4B7F; }
+.serviceBox.purple:before{ border-color: #8D4B7F; }
+.serviceBox.purple .title{ background-color: #8D4B7F; }
+.serviceBox.blue{ color: #2d75a5; }
+.serviceBox.blue:before{ border-color: #2d75a5; }
+.serviceBox.blue .title{ background-color: #2d75a5; }
+.serviceBox.yelow{ color: #FACB60ff; }
+.serviceBox.yelow:before{ border-color: #FACB60ff; }
+.serviceBox.yelow .title{ background-color: #FACB60ff; }
+.serviceBox.green{ color: rgb(47, 143, 44); }
+.serviceBox.green:before{ border-color: rgb(47, 143, 44); }
+.serviceBox.green .title{ background-color: rgb(47, 143, 44); }
+@media only screen and (max-width: 990px){
+  .serviceBox{ margin: 0 0 30px; }
+}
+
+.free {display: flex; text-align: center; justify-items: center; width: 90vw; flex-wrap: wrap;}
+.serviceBox {margin: 0 auto;}
+
+.playroom h1::before{background-image: linear-gradient(-45deg,rgb(250, 247, 96),rgb(114, 250, 96), rgb(250, 96, 96), rgb(2, 194, 252));}
+.history h1::before {background-image: linear-gradient(-45deg, rgb(119, 91, 14), #9C9993ff,rgb(74, 73, 75));}
+.wedding h1::before {background-image: linear-gradient(-45deg, rgb(240, 233, 233), rgb(209, 192, 159),rgb(247, 156, 144));}
+.family h1::before {background-image: linear-gradient(-45deg, rgb(37, 177, 24), rgb(141, 221, 125),rgb(82, 80, 85));}
+.missionary h1::before {background-image: linear-gradient(-45deg,rgb(231, 240, 230),rgb(96, 137, 250),rgb(5, 0, 54));}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+@media only screen and (min-width: 35rem) {
+
+
+  /*----------- BODY --------------*/
+  
+  
+  
+  /*----------- HEADER --------------*/
+  
+  
+  
+  /*----------- NAVIGATION --------------*/
+  .nav-logo p {display: block; font-family: 'Playball'; font-size: 1.3rem;}
+      nav ul {margin-left: 2%;}
+      nav ul li {width: auto;}
+      nav ul li:first-child a {border-left: 1px solid #777;}
+      nav ul li:last-child a {border-right: 1px solid #777;}
+      nav ul li a{padding: .5rem 1rem; font-size: 1.2rem;}
+      .nav-number {display:grid; grid-template-columns: auto auto; 
+        align-items: center;}
+      .fa-phone {grid-row: 1/3;padding: .5rem;}
+      .callus-txt {display: block;}
+      
+      .humidity-txt,#humidity, .weather-desc, .nav-address,.weather figure i {display: block;}
+      
+      .weather figure{display: grid; grid-gap: 5px; grid-template-columns: auto auto auto auto auto; grid-template-rows: 1fr 1fr;}
+      .weather-desc{grid-column: 2/4;}
+      .humidity-txt {grid-column: 4/6;}
+      #humidity {grid-column: 4/5; grid-row: 1/2;}
+      .fa-droplet {grid-column: 5/6; grid-row: 1/2;}
+      #weather-icon {grid-row: 1/4;}
+  /*----------- MAIN --------------*/
+  .call-action figure {height: 300px;}
+  
+  
+  /*----------- FOOTER --------------*/
+  footer {display: grid; grid-template-columns: auto auto;}    
+  .social-media-links {margin-top: 1.5rem;}
+  .temple-summary{padding: 0 15%;}
+  .waparagraphs {display: flex;}
+
+
+/*-------------temples---------------*/
+.grid section img {height: 110px;}
+
+/*--------------reservation------------------*/
+.reservartion-banner {height: 300px;}
+.reservation-form {padding:.2rem 10%;}
+
+/*-----------------services--------------*/
+.services-main {display: flex; flex-wrap: wrap; justify-content: space-evenly;}
+.services-main section {width: 45%; margin-bottom: 2rem;}
+.services-main figure img {width: 65%; margin: .2rem 1.5rem .2rem 0;}
+
+#changeroom {width: 80%;}
+#changeroom div {justify-content: flex-start;}
+
+#treception div {justify-content:flex-end ;}
+#treception figure img, #wedding figure img {float: right;}
+#playfigcaption, #familysearch {border-radius: 0px 0px 5px 5px;}
+#playfigcaption, #familysearch {display: block;}
+#playfigcaptionS, #familysearchS {display: none;}
+#familicenter div {justify-content: flex-start;}
+#longterm {width: 80%;}
+#freeservices {width: 100vw;}
+.free {display: flex; justify-content:space-between; flex-wrap:wrap; width: 60vw; margin: auto;}
+  } /* end of media query */ 
+
+/* 64em is also 1028px (if basefont is 16px) */
+@media only screen and (min-width: 64rem) {
+
+  header, nav, main, footer {
+      margin:auto;
+  }
+
+/*----------- BODY --------------*/
+
+
+
+/*----------- HEADER --------------*/
+
+
+
+/*----------- NAVIGATION --------------*/
+nav ul li a{font-size: 1.3rem;}
+
+
+/*----------- MAIN --------------*/
+
+.call-action figure {height: 400px;}
+
+/*----------- FOOTER --------------*/
+  
+} /* end of media query */

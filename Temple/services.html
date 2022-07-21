@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/small.css">
@@ -21,7 +22,7 @@
                 <div class="weather">
                     <figure>
                         <img src="" alt="" id="weather-icon" />
-                        <span id="current-temp"></span>&deg;C
+                        <span id="current-temp"></span>
                         <figcaption class="weather-desc">    
                         </figcaption>
                         <i class="fa-solid fa-droplet"></i><span class="humidity-txt">Humidity</span><span id="humidity"></span>
@@ -51,7 +52,137 @@
         </nav>
     </header>
 
-    <main></main>
+    <main class="services-main">
+        <section id="changeroom">
+            <div class="ten">
+                <h1>changing rooms</h1>
+            </div>
+            <figure>
+                <figcaption>You’re never fully dressed without a smile.</figcaption>
+                <img src="images/temple-clothing.jpg" alt="Temple Clothing" style="max-width: 100%;">
+                <p>Free access to changing rooms and bathroom facilities for temple patrons who have traveled far and need to change to and from church clothes</p>
+            </figure>
+        </section>
+
+        <section>
+            <div class="ten playroom">
+                <h1>playroom</h1>
+            </div>
+            <figure>
+                <figcaption id="playfigcaptionS">Life is more fun if you play games.</figcaption>
+                <img src="images/playroom.jpg" alt="Playroom" style="max-width: 100%;">
+                <p>A playroom and low-cost, short-term babysitting services for the children of patrons</p>
+                <figcaption id="playfigcaption">Life is more fun if you play games.</figcaption> 
+            </figure>
+        </section>
+
+        <section id="treception">
+            <div class="ten history">
+                <h1>themed reception</h1>
+            </div>
+            <figure>
+            <figcaption>Those who don't know history are doomed to repeat it.</figcaption>
+            <img src="images/reception.jpeg" alt="Recetion" style="max-width:100%;" srcset="images/reception300.jpeg 300w,
+            images/reception500.jpeg 500w, 
+            images/reception800.jpeg 800w,
+            images/reception1100.jpeg 1100w">
+            <p>Temple history themed reception and sitting area</p>
+            </figure>
+        </section>
+
+        <section id="familicenter">
+            <div class="ten family">
+                <h1>family search center</h1>
+            </div>
+            <figure>
+                <figcaption id="familysearchS">The story of his great-grandfather . . . was his own story, too.</figcaption>
+            <img src="images/family.png" alt="Computer center" style="max-width:100% ;">
+            <p>A family search center that supports family search and ordinance work</p>
+            <figcaption id="familysearch">The story of his great-grandfather . . . was his own story, too.</figcaption>
+            </figure>
+        </section>
+
+        <section id="wedding">
+            <div class="ten wedding">
+                <h1>wedding reception</h1>
+            </div>
+            <figure>
+                <figcaption>A moment in time. A memory for life.</figcaption>
+            <img src="images/wedding.png" alt="Wedding Reception" style="max-width:100%;" srcset="
+            images/wedding300.png 300w,
+            images/wedding500.png 500w, 
+            images/wedding800.png 800w,
+            images/wedding1100.png 1100w">
+            <p>A wedding reception hall that can be easily customized with a simple catering menu and kitchen access for food preparation and serving</p>
+            </figure>
+        </section>
+
+        <section id="longterm">
+            <div class="ten missionary">
+                <h1>Long-term stay accommodations</h1>
+            </div>
+            <figure>
+                <figcaption>A room that motivates you to dream is like a magician who gives you wings to fly!</figcaption>
+                <img src="images/missionary.jpg" alt="Apartment" style="max-width: 100%;" srcset="
+                images/missionary300.jpg 300w,
+                images/missionary500.jpg 500w, 
+                images/missionary800.jpg 800w,
+                images/missionary1100.jpg 1100w">
+                <p>Long-term stay accommodations in kitchenette suites for full-time temple missionaries</p>
+            </figure>
+        </section>
+
+        <section id="freeservices">
+            <div class="ten">
+                <h1>FREE AMENITIES</h1>
+            </div>
+            <div class="free">
+                <div class="serviceBox ">
+                    <h3 class="title">Breakfast</h3>
+                    <div class="service-icon">
+                        <span><i class="fa-solid fa-bowl-food"></i></span>
+                    </div>
+                </div>
+                <div class="serviceBox gray">
+                    <h3 class="title">workout room</h3>
+                    <div class="service-icon">
+                        <span><i class="fa-solid fa-dumbbell"></i></span>
+                    </div>
+                </div>
+                <div class="serviceBox blue">
+                    <h3 class="title">Indoor pool</h3>
+                    <div class="service-icon">
+                        <span><i class="fa-solid fa-person-swimming"></i></span>
+                    </div>
+                </div>
+                <div class="serviceBox purple">
+                    <h3 class="title">WiFi & smrt TVs</h3>
+                    <div class="service-icon">
+                        <span><i class="fa-solid fa-wifi"></i></span>
+                    </div>
+                </div>
+                <div class="serviceBox pink">
+                    <h3 class="title">Parking</h3>
+                    <div class="service-icon">
+                        <span><i class="fa-solid fa-car"></i></span>
+                    </div>
+                </div>
+                <div class="serviceBox yelow">
+                    <h3 class="title">Temple shuttle</h3>
+                    <div class="service-icon">
+                        <span><i class="fa-solid fa-place-of-worship"></i></span>
+                    </div>
+                </div>
+                <div class="serviceBox green">
+                    <h3 class="title">Family h. consultation</h3>
+                    <div class="service-icon">
+                        <span><i class="fa-solid fa-computer"></i></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
 
     <footer>
         <div class="contact-info">
@@ -62,14 +193,13 @@
             <p><b>Email</b> <a href="#">email@example.com</a></p>
         </div>
 
-        <div class="social-media-links">
-            <a href="#"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-            <a href="#"><i class="fa-brands fa-youtube"></i></a>
-        </div>
-
         <div class="send-us-message">
+            <div class="social-media-links">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
             <form action="#" method="get" class="send-message-form">
                 <fieldset>
                     <input type="text" name="f&lname" id="f&lname" required placeholder="First & Last Name">

@@ -21,7 +21,7 @@
                 <div class="weather">
                     <figure>
                         <img src="" alt="" id="weather-icon" />
-                        <span id="current-temp"></span>&deg;C
+                        <span id="current-temp"></span>
                         <figcaption class="weather-desc">    
                         </figcaption>
                         <i class="fa-solid fa-droplet"></i><span class="humidity-txt">Humidity</span><span id="humidity"></span>
@@ -86,6 +86,14 @@
                     let date = document.createElement("p");
                     let details = document.createElement("a");
                     let img = document.createElement("img");
+                    let likearea = document.createElement('button');
+                    let like = Number(window.localStorage.getItem(temple.name));
+                    console.log(like);
+                    if (like == 1) {
+                        likearea.textContent = "💗";
+                    } else {
+                        likearea.textContent = "🤍";
+                    }
 
                     name.innerHTML = temple.name;
                     date.innerHTML = temple.date;
@@ -95,13 +103,34 @@
                     img.setAttribute('alt', `${temple.name}Temple Image`);
                     img.setAttribute('loading', 'lazy');
 
+                    likearea.setAttribute('id', temple.name);
+                
+                    likearea.setAttribute('class', 'likeNo button-17');
+                    likearea.setAttribute('onclick', `likesLocalStore(\"${temple.name}\")`);
+
                     cards.append(card);
                     card.append(img);
                     card.append(name);
                     card.append(date);
                     card.append(details);
+                    card.appendChild(likearea);
                 });
             }
+            
+            function likesLocalStore(t) {
+                console.log(t);
+                let likes = Number(window.localStorage.getItem(t));
+                console.log(likes);
+                if (likes !== 0) {
+                    likes = 0;
+                    document.getElementById(t).textContent = "🤍";
+                } else {
+                    likes = 1;
+                    document.getElementById(t).textContent = "💗";
+                }
+                localStorage.setItem(`${t}`, likes);
+            }
+
 
             getcompanies()
             const gridbutton = document.querySelector("#grid");
@@ -134,14 +163,13 @@
             <p><b>Email</b> <a href="#">email@example.com</a></p>
         </div>
 
-        <div class="social-media-links">
-            <a href="#"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-            <a href="#"><i class="fa-brands fa-youtube"></i></a>
-        </div>
-
         <div class="send-us-message">
+            <div class="social-media-links">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
             <form action="#" method="get" class="send-message-form">
                 <fieldset>
                     <input type="text" name="f&lname" id="f&lname" required placeholder="First & Last Name">

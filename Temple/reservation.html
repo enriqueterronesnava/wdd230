@@ -22,7 +22,7 @@
                 <div class="weather">
                     <figure>
                         <img src="" alt="" id="weather-icon" />
-                        <span id="current-temp"></span>&deg;C
+                        <span id="current-temp"></span>
                         <figcaption class="weather-desc">    
                         </figcaption>
                         <i class="fa-solid fa-droplet"></i><span class="humidity-txt">Humidity</span><span id="humidity"></span>
@@ -53,19 +53,21 @@
     </header>
 
     <main class="reservation-main">
-        <form action="#" method="get" class="reservation-form">
-            <div class="elem-group">
+        <div class="reservartion-banner">
+            <h2>RESERVE YOUR ROOM</h2>    
+        </div>
+        <form action="index.html" method="get" class="reservation-form">
+            <div class="elem-group" id="enter-name">
                 <label for="fname">Please enter your name
                 <input type="text" name="fname" id="fname" placeholder='John Doe/Jane Doe' pattern=[A-Z\sa-z]{3,20} required ></label>
             </div>
-
             <div class="elem-group">
                 <label for="email">Email Address
                 <input type="text" name="email" id="email" placeholder="john.doe@email.com"></label>
             </div>
             <div class="elem-group">
                 <label for="phone">Telephone / Mobile 
-                <input type="text" name="phone" id="phone" placeholder="498-348-3872" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required></label>
+                <input type="text" name="phone" id="phone" placeholder="498-348-3872" pattern=(\d{3})?\s?(\d{3})?\s?(\d{4}) required></label>
             </div>  
 
             <hr>
@@ -141,14 +143,13 @@
             <p><b>Email</b> <a href="#">email@example.com</a></p>
         </div>
 
-        <div class="social-media-links">
-            <a href="#"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-            <a href="#"><i class="fa-brands fa-youtube"></i></a>
-        </div>
-
         <div class="send-us-message">
+            <div class="social-media-links">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
             <form action="#" method="get" class="send-message-form">
                 <fieldset>
                     <input type="text" name="f&lname" id="f&lname" required placeholder="First & Last Name">
